@@ -21,7 +21,7 @@ p <- 5
 
 X <- rmvnorm(N, rep(0, p), diag(1, p))
 
-X[1, ] <- rep(3, p) #### unusual -- try changing this number and see what happens
+X[1, ] <- rep(10, p) #### unusual -- try changing this number and see what happens
 
 H <- X %*% solve( crossprod(X) )  %*% t(X)
 
